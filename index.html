@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Test Harness</title>
+  <link rel="stylesheet" href="js/libs/mocha.css">
+</head>
+<body>
+  <div id="mocha"></div>
+  <div id="fixtures" style="display: none; visibility: hidden"></div>
+  <script src="js/libs/mocha.js"></script>
+  <script src="js/libs/chai.js"></script>
+  <script>
+    var expect = chai.expect;
+    mocha.setup('bdd');
+    window.onload = function () {
+      mocha.run();
+    }
+  </script>
+  <script src="js/specs/specs.js"></script>
+</body>
+</html>
